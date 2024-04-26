@@ -23499,9 +23499,12 @@ a6p:function a6p(){},
 a6m:function a6m(a,b){this.a=a
 this.b=b},
 a6l:function a6l(){},
-a6t:function a6t(a,b,c){this.a=a
-this.b=b
-this.c=c},
+a6t:function a6t(a,b,c,d,e){var _=this
+_.a=a
+_.b=b
+_.c=c
+_.d=d
+_.e=e},
 a6q:function a6q(a,b,c){this.a=a
 this.b=b
 this.c=c},
@@ -23529,7 +23532,8 @@ this.b=b},
 a6o:function a6o(a,b,c){this.a=a
 this.b=b
 this.c=c},
-a6k:function a6k(){},
+a6k:function a6k(a,b){this.a=a
+this.b=b},
 a6i:function a6i(a){this.a=a},
 a6j:function a6j(a){this.a=a},
 a6y:function a6y(a,b){this.a=a
@@ -76650,7 +76654,7 @@ return A.P(null,r)}})
 return A.Q($async$uL,r)},
 LS(a,b){var s=$.ah(),r=this.c
 r.toString
-A.ahz(new A.a6t(b,new A.bg(null,t.am),new A.xY(B.jM,s)),r,t.i).c_(new A.a6u(this,b,a),t.P)},
+A.ahz(new A.a6t(this,b,a,new A.bg(null,t.am),new A.xY(B.jM,s)),r,t.i).c_(new A.a6u(this,b,a),t.P)},
 Yi(){var s=$.ah(),r=this.c
 r.toString
 A.ahz(new A.a6f(new A.bg(null,t.am),new A.xY(B.jM,s)),r,t.z).c_(new A.a6g(this),t.P)},
@@ -76664,7 +76668,7 @@ var $async$uh=A.S(function(b,c){if(b===1)return A.O(c,r)
 while(true)switch(s){case 0:o=p.c
 o.toString
 s=3
-return A.V(A.ahz(new A.a6k(),o,t.z),$async$uh)
+return A.V(A.ahz(new A.a6k(p,a),o,t.z),$async$uh)
 case 3:q=c
 s=1
 break
@@ -76697,8 +76701,12 @@ $1(a){var s=B.bJ.fu(a)
 return new A.hC(s.h(0,"label"),s.h(0,"balance"))},
 $S:449}
 A.a6t.prototype={
-$1(a){var s=null,r=A.d3(this.a?"Add to Balance":"Subtract from Balance",s,s,s,s,s,s),q=this.b,p=this.c,o=A.ajE(A.alz(!0,p,B.Cs,new A.nz(2,!1,!0),new A.a6q(q,p,a)),q)
-return A.aeP(A.b([A.nx(A.d3("Cancel",s,s,s,s,s,s),new A.a6r(a),s),A.nx(A.d3("Update",s,s,s,s,s,s),new A.a6s(q,p,a),s)],t.F),o,r)},
+$1(a){var s,r,q=this,p=null,o=q.c,n=q.a.d
+o=A.d3(q.b?"Add to "+n[o].a:"Subtract from "+n[o].a,p,p,p,p,p,p)
+n=q.d
+s=q.e
+r=A.ajE(A.alz(!0,s,B.Cs,new A.nz(2,!1,!0),new A.a6q(n,s,a)),n)
+return A.aeP(A.b([A.nx(A.d3("Cancel",p,p,p,p,p,p),new A.a6r(a),p),A.nx(A.d3("Update",p,p,p,p,p,p),new A.a6s(n,s,a),p)],t.F),r,o)},
 $S:80}
 A.a6q.prototype={
 $1(a){var s,r=this.a.gG()
@@ -76723,7 +76731,7 @@ if(this.b)s.Yl(r,a)
 else s.a8j(r,a)}},
 $S:451}
 A.a6f.prototype={
-$1(a){var s=null,r=A.d3("Add New Label/Balance",s,s,s,s,s,s),q=this.a,p=this.b,o=A.ajE(A.alz(!0,p,A.ajX(s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,"Label",s,s,s,s,s,s,s,s,s,s,s,s,s),s,new A.a6c(q,p,a)),q)
+$1(a){var s=null,r=A.d3("Add New Item",s,s,s,s,s,s),q=this.a,p=this.b,o=A.ajE(A.alz(!0,p,A.ajX(s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,"Description",s,s,s,s,s,s,s,s,s,s,s,s,s),s,new A.a6c(q,p,a)),q)
 return A.aeP(A.b([A.nx(A.d3("Cancel",s,s,s,s,s,s),new A.a6d(a),s),A.nx(A.d3("Add",s,s,s,s,s,s),new A.a6e(q,p,a),s)],t.F),o,r)},
 $S:80}
 A.a6c.prototype={
@@ -76762,7 +76770,7 @@ s=B.b.jp(p.d,r)
 B.b.lp(p.d,q.a,s)},
 $S:0}
 A.a6k.prototype={
-$1(a){var s=null,r=A.d3("Confirm Deletion",s,s,s,s,s,s),q=A.d3("Are you sure you want to delete this balance item?",s,s,s,s,s,s)
+$1(a){var s=null,r=A.d3("Confirm Deletion",s,s,s,s,s,s),q=A.d3("Are you sure you want to delete "+this.a.d[this.b].a+"?",s,s,s,s,s,s)
 return A.aeP(A.b([A.nx(A.d3("Cancel",s,s,s,s,s,s),new A.a6i(a),s),A.nx(A.d3("Delete",s,s,s,s,s,s),new A.a6j(a),s)],t.F),q,r)},
 $S:80}
 A.a6i.prototype={

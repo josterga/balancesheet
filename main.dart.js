@@ -80529,7 +80529,7 @@ A.abh.prototype={
 $0(){return this.a.$0()},
 $S:0}
 A.abW.prototype={
-$0(){this.a.k_("https://josterga.github.io/balancesheet")},
+$0(){this.a.k_("https://balance.emanant.app")},
 $S:0}
 A.abX.prototype={
 $0(){A.SV(new A.abV(),this.a,t.z)},
@@ -80545,13 +80545,13 @@ A.abY.prototype={
 $0(){this.a.k_("https://emanant.app")},
 $S:0}
 A.abZ.prototype={
-$0(){this.a.k_("https://josterga.github.io/tasklist")},
+$0(){this.a.k_("https://track.emanant.app")},
 $S:0}
 A.ac_.prototype={
-$0(){this.a.k_("https://josterga.github.io/pomodoro")},
+$0(){this.a.k_("https://focus.emanant.app")},
 $S:0}
 A.ac0.prototype={
-$0(){this.a.k_("https://josterga.github.io/balancesheet")},
+$0(){this.a.k_("https://balance.emanant.app")},
 $S:0}
 A.ac1.prototype={
 $2(a,b){var s,r,q,p=null,o=this.a
